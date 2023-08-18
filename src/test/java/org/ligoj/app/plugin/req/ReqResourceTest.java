@@ -6,7 +6,7 @@ package org.ligoj.app.plugin.req;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
-import javax.transaction.Transactional;
+import jakarta.transaction.Transactional;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -33,7 +33,7 @@ public class ReqResourceTest extends AbstractAppTest {
 
 	@BeforeEach
 	void prepareData() throws IOException {
-		persistEntities("csv", new Class[] { Node.class }, StandardCharsets.UTF_8.name());
+		persistEntities("csv", new Class[]{Node.class}, StandardCharsets.UTF_8);
 	}
 
 	@Test
